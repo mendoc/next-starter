@@ -2,28 +2,28 @@ import React from 'react'
 import Head from 'next/head';
 import Link from 'next/link';
 
+import Nav from '../../components/Nav';
+
 import styles from './Blog.module.css';
 
 export default function Blog({ articles }) {
     return (
         <React.Fragment>
             <Head>
-                <title>Blog section</title>
+                <title>Next Starter | Blog</title>
                 <meta name="viewport" content="initial-scale=1.0 width=device-width" />
+                <meta name="theme-color" content="#333033" />
             </Head>
             <div>
-                <Link href="/">
-                    <a>Go to home</a>
-                </Link>
-                <h2>All articles</h2>
-                <hr />
+                <Nav active="blog" />
+                <h2>Tous les articles</h2>
                 {
                     articles.map(article => {
                         return (
                             <div className={styles.article} key={article.id}>
                                 <h3>{article.title}</h3>
                                 <p>{article.body.substring(0, 100)}...</p>
-                                <Link href={`/blog/${article.id}`}>Lire la suite</Link>
+                                <Link href={`/blog/${article.id}`}>Lire davantage</Link>
                                 <hr />
                             </div>
                         )
