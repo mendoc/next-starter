@@ -6,6 +6,7 @@ function About({ pok }) {
         <React.Fragment>
             <Head>
                 <title>We are ...</title>
+                <meta name="viewport" content="initial-scale=1.0 width=device-width" />
             </Head>
             <div>
                 Us and {pok?.name}!
