@@ -17,6 +17,7 @@ export default function Blog({ articles }) {
             <div>
                 <Nav active="blog" />
                 <h2>Tous les articles</h2>
+                <p>Des articles autour de Next.js seront disponibles ici pour vous permettre d'avoir des trucs et astuces pratiques et utiles dans vos projets.</p>
                 {
                     articles.map(article => {
                         return (
@@ -35,8 +36,9 @@ export default function Blog({ articles }) {
 }
 
 export async function getStaticProps() {
-    const res = await fetch('https://jsonplaceholder.typicode.com/posts');
-    const articles = await res.json();
+    // const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+    // const articles = await res.json();
+    const articles = [];
 
     return {
         props: { articles }
