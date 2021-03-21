@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Link from "next/link";
 
 function About({ pok }) {
     return (
@@ -12,6 +13,7 @@ function About({ pok }) {
                 Us and {pok?.name}!
             <img src={pok?.sprites.front_default} />
             </div>
+            <Link href="/">Home</Link>
         </React.Fragment>
     )
 }
