@@ -1,40 +1,30 @@
 {
-    "name": "post",
-    "version": "0.1.0",
-    "description": "Post public de message",
-    "main": "index.js",
-    "homepage": "https://mendoc.github.io/post",
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "deploy": "react-scripts build && gh-pages -d build"
-    },
-    "keywords": [
-        "react"
-    ],
-    "author": "Dimitri ONGOUA",
-    "license": "MIT",
-    "dependencies": {
-        "bootstrap": "4.6.0",
-        "react": "^17.0.1",
-        "react-dom": "^17.0.1",
-        "react-icons": "^4.2.0",
-        "react-router-dom": "^5.2.0",
-        "react-scripts": "^4.0.3"
-    },
-    "devDependencies": {
-        "gh-pages": "^3.1.0"
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    }
+  "name": "next-prime",
+  "version": "1.0.0",
+  "description": "A project to learn Next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mendoc/next-starter.git"
+  }, 
+  "keywords": [
+    "nextjs"
+  ],
+  "author": "Dimitri ONGOUA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mendoc/post/issues"
+  },
+  "homepage": "https://github.com/mendoc/post#readme",
+  "dependencies": {
+    "next": "^10.0.9",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
 }
