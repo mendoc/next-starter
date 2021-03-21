@@ -1,9 +1,17 @@
+import React from "react";
+import Head from "next/head";
+
 function About({ pok }) {
     return (
-        <div>
-            Us and {pok?.name}!
+        <React.Fragment>
+            <Head>
+                <title>We are ...</title>
+            </Head>
+            <div>
+                Us and {pok?.name}!
             <img src={pok?.sprites.front_default} />
-        </div>
+            </div>
+        </React.Fragment>
     )
 }
 
